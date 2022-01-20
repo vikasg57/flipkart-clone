@@ -166,3 +166,29 @@ padding: 40px;
    transform: rotate(45deg);
    cursor: pointer;
   }
+  .side>img{
+    width: 100%;
+    height: 100%;
+  }
+  .signup>a{
+    text-decoration: none;
+    color: blue;
+  }
+  #slog{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    color:#1b89dd;
+    font-weight: 545;
+    font-size: 15px;
+    border: transparent;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+  #slog>a{
+    text-decoration: none;
+    color: blue;
+  }
+  #log>a{
+    text-decoration: none;
+    color: rgb(231, 231, 235);
+  }

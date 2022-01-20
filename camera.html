@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/header.css">
+
+</head>
+
+<style>
+    #imagediv>img {
+        width: 100%;
+        height: 600px;
+
+    }
+
+    #container {
+        display: flex;
+
+    }
+
+    #sidebar {
+        flex: 2;
+        border: 1px solid black;
+        height: 800px;
+    }
+
+    #main {
+        flex: 7;
+        /* border: 1px solid black; */
+    }
+
+    #content {
+        display: flex;
+        justify-content: space-evenly;
+        /* border: 1px solid black; */
+        margin-bottom: 50px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    }
+
+    /* #content img{
+        width: 20%;
+        height: 250px;
+    }
+/*  */
+    /* #pricediv,#infodiv{ */
+    /* border: 1px solid black; */
+    /* 
+    }
+
+     */
+
+    #infodiv {
+        width: 50%;
+    }
+</style>
+
+
+<body>
+
+    <header></header>
+
+
+    <div id="imagediv">
+        <img src="https://rukminim1.flixcart.com/flap/1800/1800/image/322183a2d81a09fb.jpg?q=80" alt="">
+    </div>
+    <div id="container">
+
+        <div id="sidebar">
+
+
+
+            <h3>SORT BY PRICE</h3>
+            <input type="radio" id="asc" name="sort" value="asc">
+            <label for="asc">HIGH TO LOW</label> <br>
+            <input type="radio" id="dsc" name="sort" value="dsc">
+            <label for="dsc">LOW TO HIGH</label>
+
+
+            <h3>BRAND</h3>
+            <input type="radio" id="nikon" name="brand" value="nikon">
+            <label for="nikon">NIKON</label> <br>
+            <input type="radio" id="canon" name="brand" value="canon">
+            <label for="canon">CANON</label> <br>
+            <input type="radio" id="sony" name="brand" value="sony">
+            <label for="sony">SONY</label> <br>
+
+        </div>
+        <div id="main">
+
+            <!-- <div id="content">
+                <img src="" alt="">
+                <div id="infodiv">
+                    <h1></h1>
+                    <p></p>
+                </div>
+                <div id="pricediv">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div> -->
+
+        </div>
+
+    </div>
+
+
+    <footer></footer>
+
+
+
+</body>
+
+</html>
+<script type="module">
+
+    import { header, footer } from "./components/header.js"
+
+    import { getproduct, appenddata } from "./scripts/data.js"
+
+    document.querySelector("header").innerHTML = header()
+
+    document.querySelector("footer").innerHTML = footer()
+
+    let main = document.querySelector('#main')
+    //   ` http://localhost:3030/products?$limit=15?&description[$like]=*megapixel*&name[$like]=*dslr*&$sort[price]=1`
+
+    const api1 = ` http://localhost:3030/products?$limit=15?&description[$like]=*megapixel*&name[$like]=*dslr*&$sort[price]=1`
+    const api2 = `http://localhost:3030/products?$limit=15?&description[$like]=*megapixel*&$sort[price]=-1`
+    const api3 = `http://localhost:3030/products?$limit=15?&description[$like]=*megapixel*&$sort[price]=1`
+    const api4 = `http://localhost:3030/products?$limit=15?&manufacturer[$like]=*nikon*&description[$like]=*megapixel*&$sort[price]=-1`
+    const api5 = `http://localhost:3030/products?$limit=15?&manufacturer[$like]=*canon*&description[$like]=*megapixel*&$sort[price]=-1`
+    const api6 = `http://localhost:3030/products?$limit=15?&manufacturer[$like]=*sony*&description[$like]=*megapixel*&$sort[price]=-1`
+
+    async function getdata(api) {
+
+
+        try {
+            let res = await getproduct(api)
+            console.log(res.data)
+            appenddata(res.data, main)
+        }
+        catch (er) {
+            console.log(er)
+        }
+
+    }
+
+    getdata(api1)
+    let asc = document.querySelector('#asc')
+    let dsc = document.querySelector('#dsc')
+    let nikon = document.querySelector('#nikon')
+    let canon = document.querySelector('#canon')
+    let sony = document.querySelector('#sony')
+
+
+
+    let track = () => {
+        if (asc.checked == true) {
+            getdata(api2)
+        }
+    }
+
+
+    let track2 = () => {
+        if (dsc.checked == true) {
+            getdata(api3)
+        }
+    }
+
+    let brand = () => {
+        if (nikon.checked == true) {
+            getdata(api4)
+        }
+    }
+
+    let brand2 = () => {
+        if (canon.checked == true) {
+            getdata(api5)
+        }
+    }
+
+
+    let brand3 = () => {
+        if (sony.checked == true) {
+            getdata(api6)
+        }
+    }
+    asc.addEventListener('change', track)
+    dsc.addEventListener('change', track2)
+    nikon.addEventListener('change', brand)
+    canon.addEventListener('change', brand2)
+    sony.addEventListener('change', brand3)
+
+</script>

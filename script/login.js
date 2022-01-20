@@ -11,6 +11,7 @@ let x=JSON.parse(localStorage.getItem("mobile"));
 document.getElementById("mobile").value=x; 
 
 document.getElementById("log").addEventListener("click", function(){
-    
+
     document.querySelector(".bg-modal").style.display="none";
 })
+document.querySelector(".bg-modal").style.display="none";

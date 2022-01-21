@@ -167,6 +167,19 @@ function recommend(data,location){
 
         location.innerHTML=x
 
+        // let xyz=document.querySelectorAll('#recommend')
+
+        // xyz.forEach((ele,i)=>{
+
+        //     ele.addEventListener('click',function(){
+
+        //         console.log(data[i])
+
+        //     })
+
+        // })
+
+
 
     })
 

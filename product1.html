@@ -259,19 +259,35 @@
             document.querySelector("footer").innerHTML = footer()
 
             var container=document.querySelector('#container')
-              var lower = document.querySelector('#lower')
+            var lower = document.querySelector('#lower')
+            let recommendations = JSON.parse(localStorage.getItem('recommendations'))
 
 
             let data = JSON.parse(localStorage.getItem('items'))
 
-            let recommendations = JSON.parse(localStorage.getItem('recommendations'))
+             appendproduct(container,data)
+
+            let cartarray = JSON.parse(localStorage.getItem('cartarray')) || []
+
+            let but = document.querySelector('#button1')
+
+             but.addEventListener('click', cart)
+
+        function cart() {
+
+         cartarray.push(data)
+         localStorage.setItem("cartarray",JSON.stringify(cartarray))
+  
+         console.log(cartarray)
+
+
+        }
 
 
 
+      
 
-        appendproduct(container,data)
-
-    recommend(recommendations,lower)
+      recommend(recommendations,lower)
 
 
 

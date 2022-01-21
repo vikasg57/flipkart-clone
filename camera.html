@@ -7,58 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/productlist.css">
 
 </head>
-
 <style>
-    #imagediv>img {
-        width: 100%;
-        height: 600px;
-
-    }
-
-    #container {
-        display: flex;
-
-    }
-
-    #sidebar {
-        flex: 2;
-        border: 1px solid black;
-        height: 800px;
-    }
-
-    #main {
-        flex: 7;
-        /* border: 1px solid black; */
-    }
-
-    #content {
-        display: flex;
-        justify-content: space-evenly;
-        /* border: 1px solid black; */
-        margin-bottom: 50px;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
-    }
-
-    /* #content img{
-        width: 20%;
-        height: 250px;
-    }
-/*  */
-    /* #pricediv,#infodiv{ */
-    /* border: 1px solid black; */
-    /* 
-    }
-
-     */
-
-    #infodiv {
-        width: 50%;
+    #content>img{
+        width: 300px;
     }
 </style>
-
 
 <body>
 
@@ -120,7 +76,7 @@
 
     import { header, footer } from "./components/header.js"
 
-    import { getproduct, appenddata } from "./scripts/data.js"
+    import { getproduct, appenddata} from "./scripts/data.js"
 
     document.querySelector("header").innerHTML = header()
 
@@ -129,20 +85,22 @@
     let main = document.querySelector('#main')
     //   ` http://localhost:3030/products?$limit=15?&description[$like]=*megapixel*&name[$like]=*dslr*&$sort[price]=1`
 
-    const api1 = ` http://localhost:3030/products?$limit=15?&description[$like]=*megapixel*&name[$like]=*dslr*&$sort[price]=1`
-    const api2 = `http://localhost:3030/products?$limit=15?&description[$like]=*megapixel*&$sort[price]=-1`
-    const api3 = `http://localhost:3030/products?$limit=15?&description[$like]=*megapixel*&$sort[price]=1`
-    const api4 = `http://localhost:3030/products?$limit=15?&manufacturer[$like]=*nikon*&description[$like]=*megapixel*&$sort[price]=-1`
-    const api5 = `http://localhost:3030/products?$limit=15?&manufacturer[$like]=*canon*&description[$like]=*megapixel*&$sort[price]=-1`
-    const api6 = `http://localhost:3030/products?$limit=15?&manufacturer[$like]=*sony*&description[$like]=*megapixel*&$sort[price]=-1`
+   
+
+    const api1 = `http://127.0.0.1:4000/api/camera1`
+    const api2 = `http://127.0.0.1:4000/api/camera2`
+    const api3 = `http://127.0.0.1:4000/api/camera3`
+    const api4 = `http://127.0.0.1:4000/api/camera4`
+    const api5 = `http://127.0.0.1:4000/api/camera5`
+    const api6 = `http://127.0.0.1:4000/api/camera6`
 
     async function getdata(api) {
 
 
         try {
             let res = await getproduct(api)
-            console.log(res.data)
-            appenddata(res.data, main)
+            console.log(res)
+            appenddata(res, main)
         }
         catch (er) {
             console.log(er)
@@ -196,4 +154,6 @@
     canon.addEventListener('change', brand2)
     sony.addEventListener('change', brand3)
 
+
+  
 </script>

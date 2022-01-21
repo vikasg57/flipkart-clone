@@ -11,6 +11,7 @@ body{
   align-items: center;
   justify-content: space-around;
   position: fixed;
+  top: 0;
   
 }
 #header > img {

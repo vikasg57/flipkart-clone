@@ -9,24 +9,31 @@ body{
   /* border: 1px solid black; */
   background-color: #2874f0;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   
 }
-#header > img {
-  height: 100%;
+#header > a>img {
+  width: 30%;
+  height: 15%;
+  margin-left: 80%;
 }
 #header > input {
-  width: 30%;
-  height: 70%;
+  width: 40%;
+  height: 50%;
+  margin-right: 230px;
 }
 button {
   width: 5%;
-  height: 65%;
-  color: #2874f0;
+  height: 50%;
+  color: #eceef1;
+  background-color: transparent;
+  border: transparent;
+  font-size: 17px;
+  font-weight: 600;
 }
 option {
   width: 5%;
-  height: 65%;
+  height: 50%;
 }
 p {
   color: white;
@@ -430,4 +437,9 @@ opacity: 1;
 }
 #snav>div{
  margin-top: 10px;
+}
+
+#carticon{
+  height: 50px;
+  color: white;
 }

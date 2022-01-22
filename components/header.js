@@ -1,12 +1,14 @@
 function header(){
     return`  <div id="header">
-      <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsn9wXEymyTqt6vTZqWd7wke5Jfo_5S4VxTA&usqp=CAU"
-      />
+    <a href="./home.html"><img
+    src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png"
+  />
+    </a>
+    
       <input type="text" placeholder="search for products brands and more" />
       <button id="mlog">Login</button>
       <button>More</button>
-      <p>Cart</p>
+      <p id="carticon"><i class="fas fa-shopping-cart"></i></p>
     </div>`
 }
 

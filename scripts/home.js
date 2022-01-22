@@ -1,3 +1,9 @@
+import {header,footer} from "../components/header.js"
+
+let s=document.getElementById("nav").innerHTML=header();
+let p=document.getElementById("foot").innerHTML=footer();
+
+
 let id; 
 let img_arr=["https://rukminim1.flixcart.com/flap/1700/1700/image/c7a5f63b8e7be741.png?q=50",
 "https://rukminim1.flixcart.com/flap/1700/1700/image/735613597f70f882.jpg?q=50",
@@ -115,4 +121,24 @@ function recommend(data,location){
     })
 
 }
+
+document.querySelector(".bg-modal").style.display="none";
+
+
+document.getElementById("mlog").addEventListener("click", function(){
+    document.querySelector(".bg-modal").style.display="flex";
+    console.log("here")
+})
+document.querySelector(".close").addEventListener("click",function(){
+    document.querySelector(".bg-modal").style.display="none";
+})
+
+let x=JSON.parse(localStorage.getItem("mobile"));
+ 
+document.getElementById("mobile").value=x; 
+
+document.getElementById("log").addEventListener("click", function(){
+
+    document.querySelector(".bg-modal").style.display="none";
+})
 

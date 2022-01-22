@@ -4,7 +4,7 @@ function header(){
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsn9wXEymyTqt6vTZqWd7wke5Jfo_5S4VxTA&usqp=CAU"
       />
       <input type="text" placeholder="search for products brands and more" />
-      <button>Login</button>
+      <button id="mlog">Login</button>
       <button>More</button>
       <p>Cart</p>
     </div>`

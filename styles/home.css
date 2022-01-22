@@ -207,7 +207,7 @@ p {
   width: 100%;
   height: 100%;
   background-color: block;
-
+opacity: 1;
   position: absolute;
   top: 0;
    display: flex;
@@ -253,6 +253,14 @@ border-left-style: hidden;
 textarea:focus, input:focus{
   outline: none;
 }
+#logs{
+  background-color: tomato;
+  color: white;
+  width: 100%;
+  height: 40px;
+  border: transparent;
+  font-size: 15px;
+}
 #log{
   background-color: tomato;
   color: white;
@@ -265,7 +273,7 @@ form>p{
   color: black;
   font-size: small;
 }
-form+p{
+.or{
   color: black;
   text-align: center;
 }
@@ -327,4 +335,22 @@ button+p{
 
  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
-
+.bg-modal2{
+  width: 100%;
+  height: 100%;
+  background-color: block;
+opacity: 1;
+  position: absolute;
+  top: 0;
+   display: flex;
+   justify-content: center;
+   margin-top: 6%;
+}
+.close2{
+  position:absolute; 
+  top: 0;
+  right: 14px;
+  font-size: 42px;
+  transform: rotate(45deg);
+  cursor: pointer;
+ }

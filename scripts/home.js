@@ -123,14 +123,16 @@ function recommend(data,location){
 }
 // login 
 document.querySelector(".bg-modal").style.display="none";
-
+document.body.style.background="white"
 
 document.getElementById("mlog").addEventListener("click", function(){
     document.querySelector(".bg-modal").style.display="flex";
+    document.body.style.background="grey";
     console.log("here")
 })
 document.querySelector(".close").addEventListener("click",function(){
     document.querySelector(".bg-modal").style.display="none";
+    document.body.style.background="white"
 })
 
 let x=JSON.parse(localStorage.getItem("mobile"));
@@ -140,13 +142,32 @@ document.getElementById("mobile").value=x;
 document.getElementById("log").addEventListener("click", function(){
 
     document.querySelector(".bg-modal").style.display="none";
+    document.body.style.background="white"
 })
 
-// sign up 
-//document.querySelector(".bg-modal").style.display="none";
+//sign up 
+document.querySelector(".bg-modal2").style.display="none";
+
+document.querySelector(".signup").addEventListener("click",function(){
+    sopen();
+})
+function sopen(){
+    document.querySelector(".bg-modal").style.display="none";
+    document.querySelector(".bg-modal2").style.display="flex";
+}
+document.querySelector(".close2").addEventListener("click",function(){
+    document.querySelector(".bg-modal2").style.display="none";
+    document.body.style.background="white"
+})
+
+ document.querySelector("#logs").addEventListener("click",function(){
+     go();
+ })
  
-// let go=()=>{
-//     let x= document.getElementById("mobile").value; 
-//     localStorage.setItem("mobile",JSON.stringify(x));
-//  }
+ function go(){
+    document.querySelector(".bg-modal2").style.display="none";
+    document.querySelector(".bg-modal").style.display="flex";
+    
+    localStorage.setItem("mobile",JSON.stringify(x));
+ }
 

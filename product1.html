@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+   
     <link rel="stylesheet" href="styles/header.css">
     <script
     src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
@@ -164,8 +165,8 @@
 
 
 <body>
-
-    <header></header>
+ 
+   <div id="nav"></div>
  <div id="snav" style="display: none;">
         <div class="drop_down">Electronics      <i class="fa fa-angle-down" aria-hidden="true"></i>
            
@@ -339,7 +340,7 @@
 
     </div>
 
-    <footer></footer>
+  <div id="foot"></div>
     
 </body>
 </html>
@@ -349,9 +350,9 @@
 
             import { appendproduct,recommend} from "./scripts/data.js"
 
-            document.querySelector("header").innerHTML = header()
+            document.querySelector("#nav").innerHTML = header()
 
-            document.querySelector("footer").innerHTML = footer()
+            document.querySelector("#foot").innerHTML = footer()
 
             var container=document.querySelector('#container')
             var lower = document.querySelector('#lower')

@@ -8,7 +8,10 @@ function header(){
       <input type="text" placeholder="search for products brands and more" />
       <button id="mlog">Login</button>
       <button>More</button>
-      <p id="carticon"><i class="fas fa-shopping-cart"></i></p>
+      
+      <p ><a href="./kart.html">
+      <i class="fas fa-shopping-cart" id="carticon"></i>
+      </a></p>
     </div>`
 }
 

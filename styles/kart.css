@@ -1,6 +1,6 @@
 #container{
     display: flex;
-    width: 70%;
+    width: 80%;
   
     margin: auto;
 }
@@ -8,11 +8,36 @@
     display: flex;
     gap: 20px;
 }
+.cont{
+    justify-content: left;
+}
 #box>#im>img{
     box-shadow: none;
     height: 120px;
     width: 120px;
 }
-#box>div>p{
+.side{
+    color: rgb(15, 14, 14);
+    font-size: 15px;
+}
+.manu{
     color: black;
 }
+span{
+    margin-left: 10px;
+}
+#button1{
+    background-color: #ff9f00;
+  width: 30%;
+  height: 40px;
+  margin-top: 20px;
+}
+.inc, .dec, .rem{
+    margin-top: 15px;
+    height: 20px;
+    color: black;
+    padding: 10px;
+    
+}
+
+

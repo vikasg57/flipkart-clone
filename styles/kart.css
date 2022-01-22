@@ -1,0 +1,18 @@
+#container{
+    display: flex;
+    width: 70%;
+  
+    margin: auto;
+}
+#box{
+    display: flex;
+    gap: 20px;
+}
+#box>#im>img{
+    box-shadow: none;
+    height: 120px;
+    width: 120px;
+}
+#box>div>p{
+    color: black;
+}

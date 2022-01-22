@@ -171,3 +171,10 @@ document.querySelector(".close2").addEventListener("click",function(){
     localStorage.setItem("mobile",JSON.stringify(x));
  }
 
+ document.getElementById("catep").addEventListener("click",function(){
+     pro();
+ })
+
+ function pro(){
+     window.location.href="../products.html"
+ }

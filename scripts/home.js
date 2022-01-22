@@ -121,7 +121,7 @@ function recommend(data,location){
     })
 
 }
-
+// login 
 document.querySelector(".bg-modal").style.display="none";
 
 
@@ -141,4 +141,12 @@ document.getElementById("log").addEventListener("click", function(){
 
     document.querySelector(".bg-modal").style.display="none";
 })
+
+// sign up 
+//document.querySelector(".bg-modal").style.display="none";
+ 
+// let go=()=>{
+//     let x= document.getElementById("mobile").value; 
+//     localStorage.setItem("mobile",JSON.stringify(x));
+//  }
 

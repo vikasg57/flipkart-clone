@@ -1,3 +1,7 @@
+body{
+  margin: 0px;
+}
+
 #header {
   display: flex;
   width: 100%;
@@ -28,11 +32,7 @@ p {
   color: white;
   font-size: larger;
 }
-#body {
 
-  
-  /* border: 1px solid black; */
-}
 #des {
   height: 1700px;
   width: 100%;
@@ -90,10 +90,7 @@ p {
   width: 80%;
   margin: auto;
 }
-.offer > div {
-  /* border: 1px solid red; */
-  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
-}
+
 .offer1 {
   display: grid;
   grid-template-columns: repeat(3, 30%);
@@ -105,10 +102,7 @@ p {
   width: 80%;
   margin: auto;
 }
-.offer1 > div {
-  /* border: 1px solid red; */
-  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
-}
+
 .offer2 {
   display: grid;
   grid-template-columns: repeat(4, 25%);

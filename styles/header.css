@@ -24,8 +24,12 @@ body{
 #header button {
   width: 5%;
   height: 65%;
-  color: #2874f0;
-  font-size: 25px;
+  color: white;
+   font-size: 17px;
+  background-color: transparent;
+  border: none;
+  font-weight: bolder;
+  
 }
 option {
   width: 5%;
@@ -83,8 +87,4 @@ option {
 #footer2 > div {
   display: flex;
   gap: 5px;
-}
-
-#header ::placeholder{
-    font-size: 20px;
 }

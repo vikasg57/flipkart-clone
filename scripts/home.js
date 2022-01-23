@@ -176,5 +176,5 @@ document.querySelector(".close2").addEventListener("click",function(){
  })
 
  function pro(){
-     window.location.href="../products.html"
+     window.location.href="./products.html"
  }

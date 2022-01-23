@@ -1,5 +1,10 @@
 body{
   margin: 0px;
+  background-color: #f1f3f6;
+}
+
+body::-webkit-scrollbar{
+  display: none;
 }
 
 #header {
@@ -10,6 +15,7 @@ body{
   background-color: #2874f0;
   align-items: center;
   justify-content: space-evenly;
+  /* position: fixed; */
   
 }
 #header > a>img {
@@ -88,28 +94,40 @@ p {
 }
 .offer {
   display: grid;
-  grid-template-columns: repeat(3, 30%);
+  grid-template-columns: repeat(3, 33%);
   grid-template-rows: repeat(2, 47%);
   justify-content: center;
   gap: 10px;
-  /* border: 1px solid black; */
-  height: 580px;
-  width: 80%;
+  height: 700px;
+  width: 98%;
   margin: auto;
+  background-color: white ;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+#dynamic1{
+  margin-top: 10px;
 }
 
 .offer1 {
   display: grid;
-  grid-template-columns: repeat(3, 30%);
+  grid-template-columns: repeat(3, 33%);
   grid-template-rows: repeat(1, 100%);
   justify-content: center;
   gap: 10px;
-  /* border: 1px solid black; */
-  height: 270px;
-  width: 80%;
+
+  height: 330px;
+  width: 98%;
   margin: auto;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+ 
 }
 
+.offer1>div{
+
+  margin-top: 5px;
+
+
+}
 .offer2 {
   display: grid;
   grid-template-columns: repeat(4, 25%);
@@ -118,13 +136,17 @@ p {
   gap: 10px;
   /* border: 1px solid black; */
   height: 170px;
-  width: 80%;
+  width: 95%;
   margin: auto;
+  margin-bottom: 30px;
+   
  
 }
-/* .offer2 > div {
-  /* border: 1px solid red; */
-  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+.offer> div {
+
+  align-content: center;
+  margin-top: 10px;
+}
  
 
 .offer2 > div > img {
@@ -132,29 +154,35 @@ p {
 }
 .content {
   height: 300px;
-  width: 80%;
-  border: 1px solid black;
+  width: 98%;
   margin: auto;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 20px;
+  margin-bottom: 40px;
   overflow:scroll;
+  background-color: white;
+
+
 
 }
 #slide {
   height: 300px;
-  width: 80%;
+  width: 98%;
   /* border: 1px solid black; */
   margin: auto;
   margin-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 105px;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
 }
 #icici {
-  width: 85%;
+  width: 98%;
   height: 150px;
   /* border: 1px solid red; */
   margin: auto;
- 
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   margin-top: -100px;
+  margin-bottom: 30px;
+  
 }
 
 
@@ -174,6 +202,7 @@ p {
     text-align: center;
     gap: 50px;
     align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 #recommend{
@@ -445,4 +474,8 @@ opacity: 1;
   color: white;
   margin-bottom: 29px;
   
+}
+
+.contenthead{
+  margin-left: 20px;
 }

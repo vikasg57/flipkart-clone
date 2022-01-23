@@ -54,3 +54,11 @@
     #info{
         font-size: 18px;
     }
+
+    #container p,h1{
+        color: black;
+    }
+
+    #content img{
+        box-shadow: none;
+    }

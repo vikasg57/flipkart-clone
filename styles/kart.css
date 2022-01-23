@@ -1,0 +1,74 @@
+#container{
+    display: flex;
+    width: 80%;
+  margin: 40px auto 0px auto;
+  gap: 30px;
+
+    
+}
+#left{
+    width: 60%;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+#box{
+    display: flex;
+    gap: 20px;
+}
+.cont{
+    justify-content: left;
+}
+#box>#im>img{
+    box-shadow: none;
+    height: 120px;
+    width: 120px;
+    margin-left: 20px;
+}
+.side{
+    color: rgb(15, 14, 14);
+    font-size: 15px;
+}
+.manu{
+    color: black;
+}
+span{
+    margin-left: 10px;
+}
+#button1{
+    background-color: #ff9f00;
+  width: 30%;
+  height: 40px;
+  margin-top: 20px;
+}
+.inc, .dec, .rem{
+    margin-top: 15px;
+    height: 20px;
+    color: black;
+    padding: 10px;
+    
+}
+#right{
+  
+    width: 35%;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+#right > div>h3, h4{
+  
+    margin-left: 27px;
+}
+
+#left>.first{
+   margin-left: 20px;
+}
+.tp{
+    margin-left: 50%;
+}
+.tp1{
+    margin-left: 70%;
+}
+.tp2{
+    margin-left: 64%;
+}
+
+
+
+

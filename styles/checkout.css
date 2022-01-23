@@ -1,0 +1,54 @@
+
+.container{
+height:auto;
+display:flex;
+flex-direction: column;
+
+width: 50%;
+align-items: center; 
+text-align: center;
+
+box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+padding-left: 20px;
+margin: auto;
+margin-top: 5%;
+
+}
+
+.container input{
+margin-top: 20px;
+padding: 10px 80px;
+border-radius: 10px;
+
+}
+.container button{
+  border-radius: 10px;
+  border: transparent;
+  background-color: #2874f0;
+  color: white;
+  font-weight: bold;
+  padding: 15px 25px;
+cursor: pointer;
+
+margin-top: 10%;
+margin-bottom: 10%;
+
+
+}
+#pass{
+    padding: 5px 1px;
+    margin-right: 5px;
+}
+#expiry{
+    padding: 5px 1px ;
+}
+.inline{
+    display: flex;
+}
+label{
+    margin-top: 20px;
+}
+
+header img{
+    width: 30%;
+}

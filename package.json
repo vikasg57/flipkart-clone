@@ -1,0 +1,22 @@
+{
+  "name": "flipkart-clone",
+  "version": "1.0.0",
+  "description": "flipkart-clone for educaional purpose",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vikasg57/flipkart-clone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vikasg57/flipkart-clone/issues"
+  },
+  "homepage": "https://github.com/vikasg57/flipkart-clone#readme",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}

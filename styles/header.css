@@ -22,13 +22,13 @@ body{
   height: 60%;
 }
 #header button {
-  width: 5%;
-  height: 65%;
-  color: white;
+   width: 5%;
+   height: 65%;
+   color: white;
    font-size: 17px;
-  background-color: transparent;
-  border: none;
-  font-weight: bolder;
+   background-color: transparent;
+   border: none;
+   font-weight: bolder;
   
 }
 option {

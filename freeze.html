@@ -199,13 +199,13 @@
     let main = document.querySelector('#main')
     
 
-    const api1 = `http://127.0.0.1:4000/api/freeze1`
-    const api2 = `http://127.0.0.1:4000/api/freeze2`
-    const api3 = `http://127.0.0.1:4000/api/freeze3`
-    const api4 = `http://127.0.0.1:4000/api/freeze4`
-    const api5 = `http://127.0.0.1:4000/api/freeze5`
-    const api6 = `http://127.0.0.1:4000/api/freeze6`
-    const api7 = `http://127.0.0.1:4000/api/freeze7`
+    const api1 = `https://flipkart-backendserver.herokuapp.com/freeze`
+    const api2 = `https://flipkart-backendserver.herokuapp.com/freeze/sort?value=-1`
+    const api3 = `https://flipkart-backendserver.herokuapp.com/freeze/sort?value=1`
+    const api4 = `https://flipkart-backendserver.herokuapp.com/freeze/brand?brand=Samsung`
+    const api5 = `https://flipkart-backendserver.herokuapp.com/freeze/brand?brand=GE`
+    const api6 = `https://flipkart-backendserver.herokuapp.com/freeze/brand?brand=Whirlpool`
+    const api7 = `https://flipkart-backendserver.herokuapp.com/freeze/brand?brand=Frigidaire`
 
 
     async function getdata(api) {

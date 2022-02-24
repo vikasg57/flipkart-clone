@@ -1,60 +1,90 @@
 import {header, footer} from "../components/header.js"
 
+ //import{getproduct} from "./data.js"
+
 document.getElementById("nav").innerHTML=header();
 
 
 
 let data=JSON.parse(localStorage.getItem("cartarray")) || []
 
+
+
+  // async function getdata(api) {
+
+  //       try {
+  //           let res = await getproduct(api)
+  //           console.log(res)
+  //          displaycart(res)
+  //       }
+  //       catch (er) {
+  //           console.log(er)
+  //       }
+
+  // }
+
+
+
+
+  // getdata("http://localhost:8500/cart")
+
+ 
+
+
 let y=document.getElementById("le")
-console.log(data)
 let x=``; 
 let top=0;
 let multi=1
 
-
-displaycart(data)
-
+ displaycart(data)
 function displaycart(data){
      y.innerHTML=""
 
 
-data.forEach((ele)=>{
+    data.forEach((ele,i)=>{
 
-  multi=ele.price*70
-   multi=Math.floor(multi)
-    // multi=multi.replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+        multi=ele.price*70
+        multi=Math.floor(multi)
+          // multi=multi.replace(/\B(?=(\d{3})+(?!\d))/g, ",")
 
-x+=`  <div id="box">
-<div id="im"> <img src="${ele.image}" ></div>
-<div><h4  class="cont">${ele.name}</h4>
-<p class="manu">${ele.manufacturer}</p>
-<span>₹${multi}</span><span>20% off</span><span> 4 offers applied</span><br>
-<div><button class="inc">-</button>1<button class="dec">+</button><button class="rem">Remove</button></div>
-<button class="button1" id="button1">Place Order</button>
-           
-</div>
-<div > <p class="side">Delivery by Mon Feb 7 | Free</p>
-<p class="side">7 Days Replacement Policy</p>
-</div>
+        x+=`  <div id="box">
+        <div id="im"> <img src="${ele.image}" ></div>
+        <div><h4  class="cont">${ele.name}</h4>
+        <p class="manu">${ele.manufacturer}</p>
+        <span>₹${multi}</span><span>20% off</span><span> 4 offers applied</span><br>
+        <div><button class="inc">-</button>1<button class="dec">+</button><button class="rem">Remove</button></div>
+        <button class="button1" id="button1">Place Order</button>
+                  
+        </div>
+        <div > <p class="side">Delivery by Mon Feb 7 | Free</p>
+        <p class="side">7 Days Replacement Policy</p>
+        </div>
 
-</div>`
- top+=multi; 
-
-
-})
+        </div>`
+        
+        top+=multi; 
+    
+      })
 y.innerHTML=x; 
+
+
+// deleteproduct(`http://localhost:8500/cart/${ele._id}`)
 let remove=document.querySelectorAll('.rem')
+
 
 remove.forEach((el,i)=>{
 
- el.addEventListener('click',function(){
-console.log(i)
+   el.addEventListener('click',function(){
+     console.log(i)
     deleteproduct(i)
 })
 
 
 })
+
+
+
+
 let order=document.querySelectorAll('#button1')
 
 order.forEach((el,i)=>{
@@ -96,7 +126,28 @@ let z=` <div class="first"><H3>Price Details </H3></div>
 
   }
 
+    // async function deleteproduct(url) {
+    //     try {
 
+    //         let response = await fetch(url,{
+    //            method:"DELETE",
+            
+    //            headers:{
+    //                "Content-Type":'application/json'
+    //            }
+    //         })
+
+    //         let d = await response.json()
+    //        console.log(d)
+
+    //         // appenddata(data.data)
+
+    //     }
+    //     catch (er) {
+    //         console.log(er)
+    //     }
+
+    // }
 
 
 

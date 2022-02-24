@@ -38,15 +38,15 @@ let dynamic4 = document.querySelector('#dynamic4')
 let dynamic5 = document.querySelector('#dynamic5')
 
 
-const api1 = `http://127.0.0.1:4000/api/laptop1`
+const api1 = `https://flipkart-backendserver.herokuapp.com/laptop`
 
-const api2 = `http://127.0.0.1:4000/api/camera1`
+const api2 = `https://flipkart-backendserver.herokuapp.com/camera`
 
-const api3 = `http://127.0.0.1:4000/api/tv1`
+const api3 = `https://flipkart-backendserver.herokuapp.com/tv`
 
-const api4 = `http://127.0.0.1:4000/api/mobile1`
+const api4 = `https://flipkart-backendserver.herokuapp.com/mobile`
 
-const api5= `http://127.0.0.1:4000/api/watch1`
+const api5= `https://flipkart-backendserver.herokuapp.com/watch`
 
 
 getproduct(api3,dynamic1)

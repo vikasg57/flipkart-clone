@@ -1,18 +1,18 @@
 function header(){
-    return`  <div id="header">
-    <a href="./home.html"><img
-    src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png"
-  />
-    </a>
+  return`  <div id="header" class="fixed top-0 left-0 right-0">
+  <a href="./home.html"><img
+  src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png"
+/>
+  </a>
+  
+    <input type="text" placeholder="search for products brands and more" />
+    <button id="mlog" class="tect-white-500">Login</button>
+    <button>More</button>
     
-      <input type="text" placeholder="search for products brands and more" />
-      <button id="mlog">Login</button>
-      <button>More</button>
-      
-      <p ><a href="./kart.html">
-      <i class="fas fa-shopping-cart" id="carticon"></i>
-      </a></p>
-    </div>`
+    <p ><a href="./kart.html">
+    <i class="fas fa-shopping-cart" id="carticon"></i>
+    </a></p>
+  </div>`
 }
 
 function footer(){

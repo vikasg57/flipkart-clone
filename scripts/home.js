@@ -139,8 +139,28 @@ let x=JSON.parse(localStorage.getItem("mobile"));
  
 document.getElementById("mobile").value=x; 
 
-document.getElementById("log").addEventListener("click", function(){
+document.getElementById("log").addEventListener("click", async function(){
+         
+    let obj={};
 
+    obj={
+        email:document.getElementById("mobile").value, 
+        password:document.getElementById("pass").value
+    }
+    let data=JSON.stringify(obj);
+    //console.log(data);
+
+    let res= await fetch("https://flipkart-backendserver.herokuapp.com/register",{
+        method:"POST",
+        body:data,
+        headers:{
+            "Content-Type":'application/json'
+        }
+        
+    })
+    let da=await res.json();
+
+        console.log(da);
     document.querySelector(".bg-modal").style.display="none";
     document.body.style.background="white"
 })

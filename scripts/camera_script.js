@@ -29,7 +29,6 @@
         catch (er) {
             console.log(er)
         }
-
     }
 
     getdata(api1)

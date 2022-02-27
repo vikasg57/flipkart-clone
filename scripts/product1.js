@@ -1,4 +1,5 @@
       import { header, footer } from "../components/header.js"
+      
 
             import { appendproduct,recommend} from "./data.js"
 

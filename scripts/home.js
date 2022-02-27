@@ -63,7 +63,7 @@ async function getproduct(url,location) {
         let response = await fetch(url)
 
         let data = await response.json()
-        console.log(data) 
+        //console.log(data) 
 
         recommend(data,location)
         
@@ -95,7 +95,7 @@ function recommend(data,location){
         
 
         x +=`
-        <div id="recommend">
+        <div id="recommend" class="w-[500px]">
         
             <img src="${image}" alt="">
             <h3>${manufacturer}</h3>

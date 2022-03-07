@@ -1,6 +1,9 @@
 
     body{
           background-color: #f1f3f6;
+          font-family:Arial,
+          Helvetica,
+          sans-serif;
     }
     #imagediv>img {
         width: 100%;

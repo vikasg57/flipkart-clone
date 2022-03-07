@@ -76,7 +76,7 @@ body{
 
     }
 
-    #infodiv1 button,img,h5{
+    #infodiv1>button,img,h5{
         margin-right: 25px;
     }
 

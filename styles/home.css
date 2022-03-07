@@ -7,98 +7,13 @@ body::-webkit-scrollbar{
   display: none;
 }
 
-#header {
-  display: flex;
-  width: 100%;
-  height: 60px;
-  /* border: 1px solid black; */
-  background-color: #2874f0;
-  align-items: center;
-  justify-content: space-evenly;
-  /* position: fixed; */
-  
-}
-#header > a>img {
-  width: 30%;
-  height: 15%;
-  margin-left: 80%;
-}
-#header > input {
-  width: 40%;
-  height: 50%;
-  margin-right: 230px;
-}
-button {
-  width: 5%;
-  height: 50%;
-  color: #eceef1;
-  background-color: transparent;
-  border: transparent;
-  font-size: 17px;
-  font-weight: 600;
-}
-option {
-  width: 5%;
-  height: 50%;
-}
-p {
-  color: white;
-  font-size: larger;
-}
-
-#des {
-  height: 1700px;
-  width: 100%;
-  margin-left: 10px;
-}
-#des > p {
-  color: black;
-  font-size: 14px;
-}
-#des > h3 {
-  color: #a8998a;
-}
-#footer {
-  margin-top: 210px;
-  display: flex;
-  height: 360px;
-  width: 100%;
-  justify-content: space-between;
-  gap: 10px;
-  background-color: #172337;
-}
-#footer > div {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  justify-content: space-evenly;
-  margin-left: 15px;
-  align-items: baseline;
-}
-#footer > div > p {
-  font-size: small;
-  color: #ffffff;
-  border-left: 10px;
-  align-items: stretch;
-}
-#footer2 {
-  width: 100%;
-  display: flex;
-  background-color: #172337;
-  justify-content: space-evenly;
-  border-top: 1px solid white;
-}
-#footer2 > div {
-  display: flex;
-  gap: 5px;
-}
 .offer {
   display: grid;
   grid-template-columns: repeat(3, 33%);
   grid-template-rows: repeat(2, 47%);
   justify-content: center;
   gap: 10px;
-  height: 700px;
+  /* height: 700px; */
   width: 98%;
   margin: auto;
   background-color: white ;
@@ -115,7 +30,7 @@ p {
   justify-content: center;
   gap: 10px;
 
-  height: 330px;
+  /* height: 330px; */
   width: 98%;
   margin: auto;
    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
@@ -135,7 +50,7 @@ p {
   justify-content: center;
   gap: 10px;
   /* border: 1px solid black; */
-  height: 170px;
+  /* height: 170px; */
   width: 95%;
   margin: auto;
   margin-bottom: 30px;
@@ -153,7 +68,7 @@ p {
   width: 100%;
 }
 .content {
-  height: 300px;
+  /* height: 300px; */
   width: 98%;
   margin: auto;
   margin-top: 20px;
@@ -165,7 +80,7 @@ p {
 
 }
 #slide {
-  height: 300px;
+  /* height: 300px; */
   width: 98%;
   /* border: 1px solid black; */
   margin: auto;
@@ -176,7 +91,7 @@ p {
 }
 #icici {
   width: 98%;
-  height: 150px;
+   /* height: 150px; */
   /* border: 1px solid red; */
   margin: auto;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
@@ -221,13 +136,13 @@ p {
 }
 
 #dynamic2 img{
-    height: 170px;
+    /* height: 170px; */
     width: 100px;
     
 }
 
 #dynamic4 img{
-    height: 170px;
+      /* height: 170px; */
     width: 125px;
     
 }
@@ -236,7 +151,7 @@ p {
 }
 .bg-modal{
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   background-color: block;
 opacity: 1;
   position: absolute;
@@ -247,7 +162,7 @@ opacity: 1;
 }
 .modal-content{
   width: 700px;
-  height: 500px;
+  /* height: 500px; */
   background-color:#2874f0;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   display: flex;
@@ -361,7 +276,9 @@ button+p{
 #cate{
  display: flex;
  gap: 30px;
- margin-top: 100px;
+background-color: white;
+ margin: auto;
+ /* margin-top: 100px; */ 
  justify-content: center;
  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }

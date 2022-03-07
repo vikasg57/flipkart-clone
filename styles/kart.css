@@ -38,12 +38,16 @@ span{
   width: 30%;
   height: 40px;
   margin-top: 20px;
+
+  border: #ff9f00;
+  
 }
 .inc, .dec, .rem{
     margin-top: 15px;
     height: 20px;
     color: black;
     padding: 10px;
+    border: transparent;
     
 }
 #right{

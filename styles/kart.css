@@ -6,8 +6,8 @@ body{
 
 #container{
     display: flex;
-    width: 80%;
-  margin: 40px auto 0px auto;
+    width: 80%; 
+  margin: 80px auto 0px auto;
   gap: 30px;
 
     

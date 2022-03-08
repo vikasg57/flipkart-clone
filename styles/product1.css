@@ -34,8 +34,9 @@ body{
 
     #infodiv{
         flex: 6;
-         /* border: 1px solid red;  */
+      
          margin-top: 50px;
+         margin-left: 3%;
       
     }
 
@@ -79,9 +80,11 @@ body{
 
     }
 
-    #infodiv1>button,img,h5{
+    #infodiv1>button{
         margin-right: 25px;
     }
+
+  
 
     #infodiv1 button{
         background-color: #388e3c;
@@ -125,6 +128,9 @@ body{
 
     }
     #lower::-webkit-scrollbar{
+        display: none;
+    }
+    body::-webkit-scrollbar{
         display: none;
     }
 

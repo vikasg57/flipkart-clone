@@ -11,6 +11,9 @@ Flipkart is India's leading E-commerce marketplace with over 80 million products
 <li>HTML</li>
 <li>CSS</li>
 <li>Javascript</li>
+<li>ExpressJS</li>
+<li>MongoDB</li>
+<li>Nodejs</li>
 
 For storing user data we also used localStorage.
 

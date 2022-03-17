@@ -22,19 +22,19 @@ For storing user data we also used localStorage.
 ## Glimpse of our work 📷
 <li>Login/Signup page</li>
 <br>
-<img src="https://user-images.githubusercontent.com/91675857/158752588-25394cc9-0ad8-454c-a5e5-39cbf6ed70bf.png"></img>
+<img src=""></img>
 <li>Landing page</li>
 <br>
-<img src="https://user-images.githubusercontent.com/91675857/158754122-e26d6777-3e3d-418e-9e92-4f81e10c19be.png"></img>
+<img src=""></img>
 <li>Products page</li>
 <br>
-<img src="https://user-images.githubusercontent.com/91675857/158754160-c4c6cc48-920a-45c3-a5cb-634fbef7cf3e.png"></img>
+<img src=""></img>
 <li>Product description page</li>
 <br>
-<img src="https://user-images.githubusercontent.com/91675857/158754179-d9f8a344-ef57-489c-a3e5-42198c4db218.png"></img>
+<img src=""></img>
 <li>Cart page</li>
 <br>
-<img src="https://user-images.githubusercontent.com/91675857/158754193-32470697-7cfc-4dc4-bfec-d756818a5bd8.png"></img>
+<img src=""></img>
 <li>Payment page</li>
 <br>
-<img src="https://user-images.githubusercontent.com/91675857/158754208-b31acb15-c01a-4699-bda2-bf7ec4863289.png"></img>
+<img src=""></img>

@@ -17,6 +17,22 @@ Flipkart is India's leading E-commerce marketplace with over 80 million products
 
 For storing user data we also used localStorage.
 
+
+
+## Installation
+
+Install all npm dependecies
+
+```console
+npm install
+```
+
+Install nodemon globally
+
+```console
+npm install -g nodemon
+```
+
 ## Contributors
 <li>Vikas Gaikwad</li>
 <li>Sanket Patil</li>

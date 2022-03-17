@@ -2,7 +2,7 @@
 
 ### For Educational And Learning Purpose*
 
-This is the clone of Flipkart (www.flipkart.com). We started this project as a six-member team during construct week organized at Masai School, Bengaluru, Karnataka.
+This is the clone of Flipkart (www.flipkart.com). We started this project as a 3 members team during construct week organized at Masai School, Bengaluru, Karnataka.
 
 ## About Flipkart
 Flipkart is India's leading E-commerce marketplace with over 80 million products accross 80+ categories, headquartered at Bangalore, India. Flipkart's technology has enabled the customers to purchase the products with a single click at their home itself.

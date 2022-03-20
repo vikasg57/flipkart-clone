@@ -19,7 +19,7 @@ For storing user data we also used localStorage.
 
 ## DATABASE
 
-We are using monogoDB for data storage and We are using NodeJS and ExpreeJS for intracting with our databasein backend.
+We are using monogoDB for data storage and we are using NodeJS and ExpreeJS for intracting with our database in backend.
 
 ## Contributors
 <li>Vikas Gaikwad</li>

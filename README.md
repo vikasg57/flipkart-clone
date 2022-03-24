@@ -29,7 +29,7 @@ We are using monogoDB for data storage and we are using NodeJS and ExpreeJS for 
 ## Functionality Added
 <li>Signup</li> 
 <li>Login</li>
-<li>Filtering the produucts in multivitamin page </li>
+<li>Filtering the produucts in product page </li>
 <li>Adding prducts to cart </li>
 <li>Making payment </li>
 

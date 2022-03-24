@@ -28,12 +28,12 @@ We are using monogoDB for data storage and we are using NodeJS and ExpreeJS for 
 
 ## Functionality Added
 <li>Signup</li> 
+<li>Login</li>
 <li>Filtering the produucts in multivitamin page </li>
 <li>Adding prducts to cart </li>
 <li>Making payment </li>
-<li>Login</li>
-<li> removing products increasing quantity of products</li>
-<li> changing payment methods</li>
+
+
 
 
 
